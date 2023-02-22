@@ -1,0 +1,9 @@
+overwrite: true
+schema: 'https://global.api.dev.nox.studiolapsus.com/graphql'
+documents: 'app/api/**/*.ts'
+generates:
+  app/api/generated.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'

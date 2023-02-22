@@ -1,0 +1,10 @@
+import { useMutation, MutationHookOptions, MutationTuple } from '@apollo/client'
+import { <%= props.mutationName %>, <%= props.mutationName %>Variables } from '../common/generated'
+import { <%= props.gqlName %> } from './<%= props.hookName %>.gql'
+
+export const <%= props.hookName %> = (
+  options?: MutationHookOptions<<%= props.mutationName %>, <%= props.mutationName %>Variables>
+): MutationTuple<<%= props.mutationName %>, <%= props.mutationName %>Variables> => {
+  const mutation = useMutation(<%= props.gqlName %>, options)
+  return mutation
+}

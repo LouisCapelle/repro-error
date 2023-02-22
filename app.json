@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    },
+    "name": "lapsus-noxapp",
+    "slug": "lapsus-noxapp",
+    "scheme": "lapsus-noxapp",
+    "owner": "lapsus",
+    "version": "2.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./app/assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "notification": {
+      "icon": "./assets/pushicon.png",
+      "androidMode": "default",
+      "iosDisplayInForeground": true
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.nox.noxapp",
+      "buildNumber": "191",
+      "supportsTablet": true,
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "package": "com.nox.noxapp",
+      "versionCode": 191
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      ["expo-community-flipper", "0.162.0"],
+      "@config-plugins/detox"
+    ]
+  }
+}

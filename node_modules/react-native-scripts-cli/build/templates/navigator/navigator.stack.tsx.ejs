@@ -1,0 +1,13 @@
+import React, { FC, memo } from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
+import { <%= props.name %>ParamList } from './<%= props.name %>.types'
+
+const Stack = createStackNavigator<<%= props.name %>ParamList>()
+
+export const <%= props.name %>: FC = memo(() => {
+  return (
+    <Stack.Navigator>
+      {/* your navigation */}
+    </Stack.Navigator>
+  )
+})

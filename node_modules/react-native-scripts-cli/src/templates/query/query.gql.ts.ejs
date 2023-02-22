@@ -1,0 +1,9 @@
+import { gql } from '@apollo/client'
+
+export const <%= props.gqlName %> = gql`
+  query <%= props.queryName %> {
+    <%= props.queryName %> {
+      # What properties do you want ? Add them here
+    }
+  }
+`

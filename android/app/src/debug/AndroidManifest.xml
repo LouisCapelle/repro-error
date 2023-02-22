@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.nox.noxapp">
+
+  <application
+    android:usesCleartextTraffic="true"
+    tools:replace="android:usesCleartextTraffic"
+    tools:ignore="GoogleAppIndexingWarning"
+    tools:targetApi="28" />
+
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+</manifest>

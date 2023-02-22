@@ -1,0 +1,22 @@
+<% if (props.isNested) { %>
+  <% if (props.nestedType == 'Tab') { %>
+import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs'
+  <% } else { %>
+import { StackNavigationProp } from '@react-navigation/stack'
+  <% } %>
+import { <%= props.nestedNavigator %>ParamList } from '../<%= props.nestedNavigator %>/<%= props.nestedNavigator %>.types'
+<% } %>
+export type <%= props.name %>ParamList = {
+  /* your params */
+}
+
+<% if (props.isNested) { %>
+  <% if (props.nestedType == 'Tab') { %>
+export type <%= props.name %>Prop = BottomTabNavigationProp<
+  <% } else { %>
+export type <%= props.name %>Prop = StackNavigationProp<
+  <% } %>
+  <%= props.nestedNavigator %>ParamList,
+  '<%= props.name %>'
+>
+<% } %>

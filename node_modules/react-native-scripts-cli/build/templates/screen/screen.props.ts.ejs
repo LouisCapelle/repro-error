@@ -1,0 +1,21 @@
+<% if (props.isInNavigation) { %>
+import { <% if (props.isNested) { %> CompositeNavigationProp, <% } %> RouteProp } from '@react-navigation/native'
+import { <%= props.navigationProp %> } from '<%= props.navigationPropImport %>'
+import { <%= props.navigator %>ParamList <% if (props.isNested) { %>, <%= props.navigator %>Prop <% } %> } from '@navigation'
+<% } %>
+
+export type Props = {
+  <% if (props.isInNavigation) { %>
+    <% if (props.isNested) { %>
+    navigation: CompositeNavigationProp<
+      <%= props.navigator %>Prop,
+      <%= props.navigationProp %><<%= props.navigator %>ParamList, '<%= props.name %>'>
+    >
+    <% } else { %>
+      navigation: <%= props.navigationProp %><<%= props.navigator %>ParamList, '<%= props.name %>'>
+    <% } %>
+    route: RouteProp<<%= props.navigator %>ParamList, '<%= props.name %>'>
+  <% } else { %>
+    /* your props */
+  <% } %>
+}

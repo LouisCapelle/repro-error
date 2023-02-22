@@ -1,0 +1,10 @@
+import { useQuery, QueryHookOptions, QueryResult } from '@apollo/client'
+import { <%= props.queryName %>, <%= props.queryName %>Variables } from '../common/generated'
+import { <%= props.gqlName %> } from './<%= props.hookName %>.gql'
+
+export const <%= props.hookName %> = (
+  options?: QueryHookOptions<<%= props.queryName %>, <%= props.queryName %>Variables>
+): QueryResult<<%= props.queryName %>, <%= props.queryName %>Variables> => {
+  const query = useQuery<<%= props.queryName %>>(<%= props.gqlName %>, options)
+  return query
+}

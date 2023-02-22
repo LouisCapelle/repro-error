@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>112018406921-034ne5g0hr8cn5kdpv89kue9l3oq6bgh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.112018406921-034ne5g0hr8cn5kdpv89kue9l3oq6bgh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBb5IvIGNPeWmnJl35Ub5DwZ61AvTQyNX0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>112018406921</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.nox.noxapp</string>
+	<key>PROJECT_ID</key>
+	<string>noxapp-306715</string>
+	<key>STORAGE_BUCKET</key>
+	<string>noxapp-306715.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:112018406921:ios:4694df9b4b8a837ee8c2d8</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-2833259635541480~7849741020</string>
+</dict>
+</plist>

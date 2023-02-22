@@ -1,0 +1,38 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "baseUrl": "./app",
+    "paths": {
+      "@components": ["components/index"],
+      "@components/*": ["components/*"],
+      "@constants/*": ["constants/*"],
+      "@config": ["config/index"],
+      "@services": ["services/index"],
+      "@services/*": ["services/*"],
+      "@screens": ["screens/index"],
+      "@screens/*": ["screens/*"],
+      "@hooks": ["hooks/index"],
+      "@hooks/*": ["hooks/*"],
+      "@navigation": ["navigation/index"],
+      "@navigation/*": ["navigation/*"],
+      "@utils/*": ["utils/*"],
+      "@assets": ["assets/index"],
+      "@theme": ["theme/index"],
+      "@theme/*": ["theme/*"],
+      "@api": ["api/index"],
+      "@api/*": ["api/*"],
+      "@redux": ["redux/index"],
+      "@redux/*": ["redux/*"]
+    }
+  }
+}

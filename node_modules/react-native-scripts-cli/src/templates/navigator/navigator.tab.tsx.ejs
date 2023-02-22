@@ -1,0 +1,14 @@
+import React, { FC, memo } from 'react'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { Icon } from '@components'
+import { <%= props.name %>ParamList } from './<%= props.name %>.types'
+
+const Tab = createBottomTabNavigator<<%= props.name %>ParamList>()
+
+export const <%= props.name %>: FC = memo(() => {
+  return (
+    <Tab.Navigator>
+      {/* your navigation */}
+    </Tab.Navigator>
+  )
+})

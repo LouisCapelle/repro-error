@@ -1,0 +1,9 @@
+import { gql } from '@apollo/client'
+
+export const <%= props.gqlName %> = gql`
+  mutation <%= props.mutationName %> {
+    <%= props.mutationName %> {
+      # What properties do you want ? Add them here
+    }
+  }
+`
